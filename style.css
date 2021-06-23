@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,600&display=swap');
+
+:root {
+  --color-dark: #222222;
+  --color-red: #891f11;
+  --color-orange: #fe940a;
+  --color-yellow: #fde24d;
+  --color-blue: #3a77c7;
+
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #eee;
+
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
+h1 {
+  font-size: 3.5rem;
+}
+
+.hero__heading {
+  text-transform: uppercase;
+}
+
+.header {
+  background-color: var(--color-dark);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  min-height: 2em;
+  padding: 0px 20px;
+}
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.container--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.logo {
+  background-color: var(--color-blue);
+}
+
+.nav__list {
+  list-style-type: none;
+  font: inherit;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font: inherit;
+
+  color: var(--color-orange);
+}
+
+.container--hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.hero {
+  color: var(--color-white);
+  background-image: url('https://images.unsplash.com/photo-1591303872989-2640dc28185b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2636&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30vh;
+  border: 2px solid yellow;
+}
